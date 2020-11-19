@@ -1,0 +1,64 @@
+html {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: rgb(224, 223, 223);
+}
+
+p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 600px 1fr;
+  grid-template-rows: 100px 800px 50px 400px 350px;
+  grid-template-areas:
+    ". title ."
+    ". img-div ."
+    ". bio ."
+    ". tribute-info .";
+}
+
+#title {
+  grid-area: title;
+  justify-self: center;
+  align-self: center;
+}
+
+#img-div {
+    grid-area: img-div;
+    align-self: center;
+    justify-self: center;
+}
+
+#caption {
+    grid-area: caption;
+    justify-self: center;
+}
+
+#image {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ border-radius: 10px;
+}
+
+#img-caption {
+  grid-area: img-caption;
+  margin: 10px 0px 0px 170px;
+}
+
+#bio {
+    grid-area: bio;
+    justify-self: center;
+    align-self: ;
+}
+
+#tribute-info {
+  grid-area: tribute-info;
+  justify-self: center;
+}
+
+#tribute-info h2 {
+    justify-self: center;
+}
